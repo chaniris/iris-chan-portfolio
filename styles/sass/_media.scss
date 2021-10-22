@@ -2,28 +2,72 @@
 
 /* portrait tablet and small desktops */
 @media (max-width: 940px) {
-    body {
-        background-color: red; 
+    .f1Img {
+        width: 200px; 
+    } 
+    .aboutTextContainer {
+        width: 60%; 
+    } 
+    .skillsContainer ul {
+        width: 90%; 
+    } 
+    .projectTextContainer h2 {
+        margin: 0; 
+    } 
+    .portfolioItem {
+        margin: 50px 0; 
+    } 
+    .projectTextContainer {
+        padding: 0 10px; 
     } 
     .gallery-cell {
     width: 50%;
+    }
+    #homeButton {
+    bottom: 20px;
+    right: 20px; 
+    font-size: 1.8rem;
     }
 }
 
 /* landscape phone to portrait tablet */
 @media (max-width: 768px) {
-    body {
-        background-color: blue; 
+    .aboutTextContainer {
+        width: 70%; 
     } 
+    .skillsContainer ul {
+        width: 100%; 
+    } 
+    .portfolioItem {
+        flex-direction: column;
+        margin: 70px 0;
+    } 
+    .projectImgContainer,
+    .projectTextContainer {
+        width: 90%; 
+        margin: 0 auto; 
+    }
     .gallery-cell {
         width: 70%;
+    }
+    #homeButton {
+    bottom: 10px;
+    right: 10px; 
+    font-size: 1.8rem;
     }
 }
 
 /* landscape phones and down */
 @media (max-width: 480px) {
-    body {
-        background-color: lime; 
+    .aboutContainer {
+        flex-direction: column; 
+    } 
+    .f1Img {
+        margin: 0 auto; 
+    } 
+    .aboutTextContainer {
+        width: 100%; 
+        text-align: center;
     } 
     .gallery-cell {
         width: 100%;

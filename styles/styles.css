@@ -27,7 +27,8 @@ figure {
 }
 
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   height: 0;
   overflow: visible;
 }
@@ -140,7 +141,8 @@ fieldset {
 }
 
 legend {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: inherit;
   display: table;
   max-width: 100%;
@@ -158,7 +160,8 @@ textarea {
 }
 
 [type=checkbox], [type=radio] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
 }
 
@@ -210,11 +213,13 @@ template {
 }
 
 html {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 *, *:before, *:after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 .sr-only {
@@ -298,13 +303,22 @@ h1 {
 
 /********** nav **********/
 nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 nav li {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 a,
@@ -317,6 +331,7 @@ a:visited {
 a:hover, a:focus,
 a.button:hover, a.button:focus {
   color: #353353;
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -330,9 +345,16 @@ nav a:hover {
 }  */
 /********** about **********/
 .aboutContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 h2 {
@@ -365,10 +387,18 @@ a.button {
 
 /********** skills **********/
 .skillsContainer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 80%;
   margin: 0 auto;
 }
@@ -379,13 +409,16 @@ a.button {
 }
 
 .skillsContainer img {
+  -webkit-filter: grayscale(100%);
   /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
 }
 
 .skillsContainer img:hover {
+  -webkit-filter: grayscale(0%);
   /* Safari 6.0 - 9.0 */
   filter: grayscale(0%);
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -396,6 +429,7 @@ a.button {
 
 .skillsIcons:hover {
   opacity: 100%;
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -410,8 +444,13 @@ h4 {
 }
 
 .portfolioItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin: 100px 0;
 }
 
@@ -428,6 +467,7 @@ h4 {
   margin: 0 5px;
   background-color: #999;
   counter-increment: gallery-cell;
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -441,17 +481,31 @@ h4 {
 }
 
 .socialLinks ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .socialLinks li {
   width: 200px;
   height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .socialLinks i {
@@ -510,34 +564,97 @@ footer {
 
 #homeButton:hover {
   opacity: 80%;
+  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
 /********** media queries **********/
 /* portrait tablet and small desktops */
 @media (max-width: 940px) {
-  body {
-    background-color: red;
+  .f1Img {
+    width: 200px;
+  }
+
+  .aboutTextContainer {
+    width: 60%;
+  }
+
+  .skillsContainer ul {
+    width: 90%;
+  }
+
+  .projectTextContainer h2 {
+    margin: 0;
+  }
+
+  .portfolioItem {
+    margin: 50px 0;
+  }
+
+  .projectTextContainer {
+    padding: 0 10px;
   }
 
   .gallery-cell {
     width: 50%;
   }
+
+  #homeButton {
+    bottom: 20px;
+    right: 20px;
+    font-size: 1.8rem;
+  }
 }
 /* landscape phone to portrait tablet */
 @media (max-width: 768px) {
-  body {
-    background-color: blue;
+  .aboutTextContainer {
+    width: 70%;
+  }
+
+  .skillsContainer ul {
+    width: 100%;
+  }
+
+  .portfolioItem {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 70px 0;
+  }
+
+  .projectImgContainer,
+.projectTextContainer {
+    width: 90%;
+    margin: 0 auto;
   }
 
   .gallery-cell {
     width: 70%;
   }
+
+  #homeButton {
+    bottom: 10px;
+    right: 10px;
+    font-size: 1.8rem;
+  }
 }
 /* landscape phones and down */
 @media (max-width: 480px) {
-  body {
-    background-color: lime;
+  .aboutContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .f1Img {
+    margin: 0 auto;
+  }
+
+  .aboutTextContainer {
+    width: 100%;
+    text-align: center;
   }
 
   .gallery-cell {
@@ -545,12 +662,17 @@ footer {
   }
 
   .socialLinks ul {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .socialLinks li {
     width: 150px;
     height: 150px;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
