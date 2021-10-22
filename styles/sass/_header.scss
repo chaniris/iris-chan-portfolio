@@ -1,0 +1,92 @@
+/********** header **********/ 
+
+header {
+    height: 100vh; 
+} 
+
+.intro {
+    padding: 50px; 
+} 
+
+h1 {
+    font-size: 1.8rem; 
+} 
+
+.headerImg {
+    width: 100px; 
+    margin: 0 auto; 
+    margin-top: 100px;
+} 
+
+
+/********** nav **********/ 
+
+nav ul {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+} 
+
+nav li {
+    flex: 1; 
+} 
+
+a,
+a:visited {
+    color: $color-primary; 
+    outline: 0; 
+    text-decoration: none;
+} 
+
+a:hover, a:focus, 
+/* button:hover, button:focus, */
+a.button:hover, a.button:focus {
+    color: $color-dark; 
+    transition: all 0.2s;
+} 
+
+nav a:focus,
+nav a:hover {
+    border-bottom: 2px solid $color-dark; 
+} 
+
+/* .header i {
+    margin: 10px; 
+}  */
+
+
+/********** about **********/ 
+
+.aboutContainer {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+} 
+
+h2 {
+    text-align: left;
+    font-size: 1.4rem; 
+    padding: 0 25px; 
+} 
+
+.f1Img {
+    width: 250px; 
+    margin: 25px 0; 
+} 
+
+.aboutTextContainer {
+    text-align: left;
+    width: 50%; 
+    padding: 25px 50px;  
+} 
+
+/* button, */
+a.button {
+    color: white; 
+    background-color: $color-primary;
+    border-radius: 30px;
+    font-size: 0.8rem; 
+    padding: 10px 30px; 
+    border: none; 
+    font-weight: 700; 
+} 
