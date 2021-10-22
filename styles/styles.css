@@ -633,6 +633,10 @@ footer {
     width: 70%;
   }
 
+  footer {
+    margin-top: 50px;
+  }
+
   #homeButton {
     bottom: 10px;
     right: 10px;
@@ -674,5 +678,9 @@ footer {
   .socialLinks li {
     width: 150px;
     height: 150px;
+  }
+
+  #homeButton {
+    visibility: hidden;
   }
 }
