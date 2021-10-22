@@ -191,7 +191,7 @@ h2 {
 }
 
 
-/********** projects & doodles **********/ 
+/********** projects **********/ 
 
 h4 {
     font-size: 0.9rem; 
@@ -285,13 +285,37 @@ h4 {
 
 /********** contact **********/ 
 
-.contactContainer {
+.socialLinks {
+    background-color: white; 
+}
+
+.socialLinks ul {
     display: flex; 
     flex-direction: row;
     justify-content: space-evenly;
 } 
 
-form {
+.socialLinks li {
+    width: 200px; 
+    height: 200px; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+} 
+
+.socialLinks i {
+    font-size: 2.5rem;
+    margin: 10px; 
+}
+
+/* .contactContainer {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: 2px solid blue; 
+}  */
+
+/* form {
     text-align: left;
 }
 
@@ -314,7 +338,7 @@ textarea {
 
 button {
     cursor: pointer;
-} 
+}  */
 
 
 /********** footer  **********/ 
