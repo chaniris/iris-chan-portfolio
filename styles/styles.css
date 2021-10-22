@@ -650,6 +650,10 @@ footer {
 }
 /* landscape phones and down */
 @media (max-width: 480px) {
+  .headerImg {
+    margin-top: 25px;
+  }
+
   .aboutContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

@@ -66,6 +66,9 @@
 
 /* landscape phones and down */
 @media (max-width: 480px) {
+    .headerImg {
+        margin-top: 25px;
+    } 
     .aboutContainer {
         flex-direction: column; 
     } 
