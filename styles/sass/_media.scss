@@ -32,6 +32,9 @@
 
 /* landscape phone to portrait tablet */
 @media (max-width: 768px) {
+    .headerImg {
+        margin-top: 50px;
+    } 
     .aboutTextContainer {
         width: 70%; 
     } 
@@ -52,6 +55,7 @@
     }
     footer {
         margin-top: 50px; 
+        padding: 0px;
     }
     #homeButton {
     bottom: 10px;
