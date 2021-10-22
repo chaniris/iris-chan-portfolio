@@ -22,39 +22,44 @@
 
     <!-- link to fontawesome -->
     <script src="https://kit.fontawesome.com/1eff98ce6d.js" crossorigin="anonymous"></script>
+
+    <!-- link to flickity (library) css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css" media="screen">
 </head>
 <body>
+    <button onclick="topFunction()" id="homeButton">🔝</button>
+
     <header>
-        <!------------ desktopHeader START ------------>
+        <!------------ header START ------------>
         <div class="wrapper">
             <nav>
                 <ul>
                     <li>
-                        <a href="#about">
+                        <a href="#about" class='anchor'>
                             <!-- <i class="fas fa-child"></i>  -->
                             About
                         </a>
                     </li>
                     <li>
-                        <a href="#skills">
+                        <a href="#skills" class='anchor'>
                             <!-- <i class="fas fa-wrench"></i>  -->
                             Skills
                         </a>
                     </li>
                     <li>
-                        <a href="#projects">
+                        <a href="#projects" class='anchor'>
                             <!-- <i class="fas fa-flask"></i>  -->
                             Projects
                         </a>
                     </li>
                     <li>
-                        <a href="#doodles">
+                        <a href="#doodles" class='anchor'>
                             <!-- <i class="far fa-images"></i>  -->
                             Doodles
                         </a>
                     </li>
                     <li>
-                        <a href="#contact">
+                        <a href="#contact" class='anchor'>
                             <!-- <i class="fas fa-paper-plane"></i>  -->
                             Contact
                         </a>
@@ -63,7 +68,7 @@
             </nav>
 
         </div> 
-        <!------------ desktopHeader END ------------>
+        <!------------ header END ------------>
 
         <!------------ home START ------------>
         <div class="homeContainer">
@@ -73,8 +78,8 @@
                         <img src="images/avatar/iris-crocs.png" alt="Profile picture avatar" />
                     </div>
                     <h1>Iris Chan</h1>
-                    <p class='iAm'>I'm a <span class="rotateText">front-end web developer, digital illustrator</span>!</p>
-                    <div><a href="#contact" class='button'>Say Hello</a></div>
+                    <!-- <p>I'm a <span class="rotateText">front-end web developer, digital illustrator</span>!</p> -->
+                    <div><a href="#contact" class='button anchor'>Say Hello</a></div>
                 </div>
         
             </div>
@@ -240,143 +245,17 @@
         <section id='doodles' class="doodles">
             <div class="wrapper">
                 <h2>Doodles</h2>
-                <div class="doodleContainer">
-
-                    <!----- gnomes START ----->
-                    <a href="images/doodles/viewMore/gnome.png" alt="Drawings of gnomes and stickers of the gnome drawings">
-                        <div class="doodleItem">
-                            <div class="details">
-                                <h4>Gnomes</h4>
-                                <div class="zoomButton"><i class="fas fa-search-plus"></i></div>
-                            </div>
-                            <div class="thumb">
-                                <img src="images/doodles/preview/gnome.png" alt="Drawing of gnome" />
-                                <div class="overlay"></div>
-                            </div>
-                        </div>
-                    </a>
-                    <!----- gnomes END ----->
-
-                    <!----- drums START ----->
-                    <a href="images/doodles/viewMore/drums.png" alt="Drawing of drumset with Google image of drumset">
-                        <div class="doodleItem">
-                            <div class="details">
-                                <h4>Christmas Drums</h4>
-                                <div class="zoomButton"><i class="fas fa-search-plus"></i></div>
-                            </div>
-                            <div class="thumb">
-                                <img src="http://placekitten.com/g/500/500" alt="Drawing of drumset in snowglobe" />
-                                <div class="overlay"></div>
-                            </div>
-                        </div>
-                    </a>
-                    <!----- drums END ----->
-
-                    <!----- nike sneakers START ----->
-                    <a href="images/doodles/viewMore/nike.png" alt="Drawing of sneakers and embroidery of the sneakers drawing with original sneakers in background">
-                        <div class="doodleItem">
-                            <div class="details">
-                                <h4>Sneakers</h4>
-                                <div class="zoomButton"><i class="fas fa-search-plus"></i></div>
-                            </div>
-                            <div class="thumb">
-                                <img src="http://placekitten.com/g/500/500" alt="Drawing of sneakers" />
-                                <div class="overlay"></div>
-                            </div>
-                        </div>
-                    </a>
-                    <!----- nike sneakers END ----->
-
-                    <!----- chitty chitty bang bang START ----->
-                    <a href="images/doodles/viewMore/chittychitty.png" alt="Drawing of Chitty Chitty film poster printed on mug with original film poster in background">
-                        <div class="doodleItem">
-                            <div class="details">
-                                <h4>Chitty Chitty Bang Bang</h4>
-                                <div class="zoomButton"><i class="fas fa-search-plus"></i></div>
-                            </div>
-                            <div class="thumb">
-                                <img src="images/doodles/preview/chittychitty.png" alt="Drawing of Chitty Chitty Bang Bang film poster" />
-                                <div class="overlay"></div>
-                            </div>
-                        </div>
-                    </a>
-                    <!----- chitty chitty bang bang END ----->
-
-                    <!----- gti START ----->
-                    <a href="images/doodles/viewMore/gti.jpeg" alt="Drawings of Volkswagen GTI car">
-                        <div class="doodleItem">
-                            <div class="details">
-                                <h4>Volkswagen GTI</h4>
-                                <div class="zoomButton"><i class="fas fa-search-plus"></i></div>
-                            </div>
-                            <div class="thumb">
-                                <img src="images/doodles/preview/gti.png" alt="Drawing of girl on slide with car" />
-                                <div class="overlay"></div>
-                            </div>
-                        </div>
-                    </a>
-                    <!----- gti END ----->
-
-                    <!----- troll START ----->
-                    <a href="images/doodles/viewMore/troll.jpg" alt="Drawing of troll beside a troll lighter">
-                        <div class="doodleItem">
-                            <div class="details">
-                                <h4>Troll in Christmas Sweater</h4>
-                                <div class="zoomButton"><i class="fas fa-search-plus"></i></div>
-                            </div>
-                            <div class="thumb">
-                                <img src="images/doodles/preview/troll.png" alt="Drawing of troll in Christmas sweater" />
-                                <div class="overlay"></div>
-                            </div>
-                        </div>
-                    </a>
-                    <!----- troll END ----->
-
-                    <!----- doll START ----->
-                    <a href="images/doodles/viewMore/doll.jpg" alt="Drawing of Ndebele doll beside an actual Ndebele doll">
-                        <div class="doodleItem">
-                            <div class="details">
-                                <h4>Ndebele Doll</h4>
-                                <div class="zoomButton"><i class="fas fa-search-plus"></i></div>
-                            </div>
-                            <div class="thumb">
-                                <img src="images/doodles/preview/doll.png" alt="Drawing of Ndebele doll" />
-                                <div class="overlay"></div>
-                            </div>
-                        </div>
-                    </a>
-                    <!----- doll END ----->
-
-                    <!----- foo fighters START ----->
-                    <a href="images/doodles/viewMore/foofighters.png" alt="Drawings of Pat Smear, Dave Grohl, and Taylor Hawkins from Foo Fighters">
-                        <div class="doodleItem">
-                            <div class="details">
-                                <h4>Foo Fighters</h4>
-                                <div class="zoomButton"><i class="fas fa-search-plus"></i></div>
-                            </div>
-                            <div class="thumb">
-                                <img src="images/doodles/preview/foofighters.png" alt="Drawing of Dave Grohl" />
-                                <div class="overlay"></div>
-                            </div>
-                        </div>
-                    </a>
-                    <!----- foo fighters END ----->
-
-                    <!----- seagull START ----->
-                    <a href="images/doodles/viewMore/seagull.gif" alt="Drawings of seagulls">
-                        <div class="doodleItem">
-                            <div class="details">
-                                <h4>Seagull Friends @ Nathan Phillips Square, Toronto</h4>
-                                <div class="zoomButton"><i class="fas fa-search-plus"></i></div>
-                            </div>
-                            <div class="thumb">
-                                <img src="images/doodles/preview/seagull.png" alt="Drawing of seagull" />
-                                <div class="overlay"></div>
-                            </div>
-                        </div>
-                    </a>
-                    <!----- seagull END ----->
-
+                <div class="gallery js-flickity">
+                    <img src="images/doodles/preview/gnome.png" alt="Drawing of gnome" class="gallery-cell" />
+                    <img src="http://placekitten.com/g/500/500" alt="Drawing of drumset in snowglobe" class="gallery-cell" />
+                    <img src="http://placekitten.com/g/500/500" alt="Drawing of sneakers" class="gallery-cell" />
+                    <img src="images/doodles/preview/chittychitty.png" alt="Drawing of Chitty Chitty Bang Bang film poster"
+                        class="gallery-cell" />
+                    <img src="images/doodles/preview/gti.png" alt="Drawing of girl on slide with car" class="gallery-cell" />
+                    <img src="images/doodles/preview/troll.png" alt="Drawing of troll in Christmas sweater" class="gallery-cell" />
+                    <img src="images/doodles/preview/doll.png" alt="Drawing of Ndebele doll" class="gallery-cell" />
+                    <img src="images/doodles/preview/foofighters.png" alt="Drawing of Dave Grohl" class="gallery-cell" />
+                    <img src="images/doodles/preview/seagull.png" alt="Drawing of seagull" class="gallery-cell" />
                 </div>
             </div>
         </section>
@@ -410,17 +289,18 @@
                 <div class="socialLinks">
                     <ul>
                         <li>
-                            <a href="https://www.linkedin.com/in/iriscychan/"><i class="fab fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/iriscychan/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i>
                                 <div>LinkedIn</div>
                             </a>
                         </li>
                         <li>
-                            <a href="https://github.com/chaniris"><i class="fab fa-github"></i>
+                            <a href="https://github.com/chaniris" target="_blank" rel="noopener"><i class="fab fa-github"></i>
                                 <div>Github</div>
                             </a>
                         </li>
                         <li>
-                            <a href="mailto: iris_chan_77@hotmail.com"><i class="fas fa-envelope"></i>
+                            <a onClick="javascript:window.open('mailto:iris_chan_77@hotmail.com', 'mail');event.preventDefault()"
+                                href="mailto:iris_chan_77@hotmail.com"><i class="fas fa-envelope"></i>
                                 <div>Email</div>
                             </a>
                         </li>
@@ -436,10 +316,14 @@
     <footer>
         <div>
             <p>Designed by Iris Chan © 2021</p>
+            <p>Created using HTML, CSS, JS, and Flickity</p>
         </div>
     </footer>
 
     <!-- link to js -->
     <script src="script.js"></script>
+
+    <!-- link to flickity (library) js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
 </body>
 </html>
