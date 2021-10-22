@@ -28,8 +28,4 @@
     #hamNav input:checked ~ #hamItems { 
         display: block; 
     }
-    #hamNav input:focus + .checkbox
-    {
-        background-color: red;
-    }
 }

@@ -689,3 +689,36 @@ footer {
     visibility: hidden;
   }
 }
+#hamNav label,
+#hamburger {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #hamItems a {
+    display: block;
+    width: 100%;
+  }
+
+  #hamNav label {
+    display: inline-block;
+    color: white;
+    background: #FFD15C;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  #hamNav label:hover {
+    color: #353353;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+
+  #hamItems {
+    display: none;
+  }
+
+  #hamNav input:checked ~ #hamItems {
+    display: block;
+  }
+}
