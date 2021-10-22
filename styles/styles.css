@@ -83,8 +83,8 @@ a:visited {
 } 
 
 a:hover, a:focus, 
-a.button:hover, a.button:focus, 
-button:hover, button:focus {
+/* button:hover, button:focus, */
+a.button:hover, a.button:focus {
     color: #353353;  
     transition: all 0.2s;
 } 
@@ -94,9 +94,9 @@ nav a:hover {
     border-bottom: 2px solid #353353; 
 } 
 
-.header i {
+/* .header i {
     margin: 10px; 
-} 
+}  */
 
 
 /********** header **********/ 
@@ -115,7 +115,7 @@ h1 {
     margin-top: 100px;
 } 
 
-button, 
+/* button, */
 a.button {
     color: white; 
     background-color: #FFD15C;
@@ -217,71 +217,18 @@ h4 {
 
 /********** doodles **********/ 
 
-.doodleContainer {
-    display: flex; 
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-} 
-
-.doodleContainer a {
-    width: 250px; 
-    margin: 25px; 
-    position: relative;  
-} 
-
-/* .thumb img {
-    border-radius: 20px;
-} */
-
-.details { 
-    position: absolute; 
-    top: 0; 
-    bottom: 0; 
-    right: 0; 
-    left: 0; 
-    padding: 25px; 
-} 
-
-.details h4 {
-    opacity: 0%; 
-    position: absolute; 
-    top: -25px; 
-    right: -5px; 
-    left: -5px; 
-    bottom: -25px; 
-    display: flex; 
-    flex-direction: column;
-    justify-content: center; 
-    padding: 50px; 
-}
-
-.details:hover {
-    /* border-radius: 20px; */
+.gallery-cell {
+    width: 30%;
+    height: auto; 
+    margin: 0 5px;
+    background-color: #999;
+    counter-increment: gallery-cell;
     transition: all 0.2s;
-    background-color: #454360; 
-    opacity: 90%;
-} 
-
-.details h4:hover {
-    opacity: 100%; 
 }
 
-.zoomButton {
-    color: white; 
-    position: absolute; 
-    bottom: 10%; 
-    left: 10%; 
-    background-color: #FFD15C; 
-    border-radius: 50%; 
-    height: 40px; 
-    width: 40px; 
-    text-align: center;
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-} 
-
+.gallery-cell.is-selected {
+    background-color: #FFD15C;
+}
 
 /********** contact **********/ 
 
@@ -336,10 +283,6 @@ textarea {
     height: 250px; 
 }
 
-button {
-    cursor: pointer;
-}  */
-
 
 /********** footer  **********/ 
 
@@ -348,4 +291,64 @@ footer {
 	padding: 40px 0;
     color: #9C9AB3;
     font-size: 0.7rem;
+}
+
+/********** media queries **********/ 
+
+/* portrait tablet and small desktops */
+@media (max-width: 940px) {
+    body {
+        background-color: red; 
+    } 
+    .gallery-cell {
+    width: 50%;
+    }
+}
+
+/* landscape phone to portrait tablet */
+@media (max-width: 768px) {
+    body {
+        background-color: blue; 
+    } 
+    .gallery-cell {
+        width: 70%;
+    }
+}
+
+/* landscape phones and down */
+@media (max-width: 480px) {
+    body {
+        background-color: lime; 
+    } 
+    .gallery-cell {
+        width: 100%;
+    }
+    .socialLinks ul {
+        flex-direction: column;
+        align-items: center;
+    } 
+    .socialLinks li {
+        width: 150px; 
+        height: 150px; 
+    } 
+    
+}
+
+/********** home button **********/ 
+
+#homeButton {
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 99;
+    font-size: 2rem;
+    cursor: pointer;
+    border: none; 
+    background: none; 
+}
+
+#homeButton:hover {
+    opacity: 80%; 
+    transition: all 0.2s;
 }
