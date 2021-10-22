@@ -1,0 +1,159 @@
+/********** skills **********/ 
+
+.skillsContainer ul {
+
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    justify-content: center;
+    width: 80%; 
+    margin: 0 auto; 
+} 
+
+.skillsContainer ul li {
+    width: 80px; 
+    margin: 10px 50px; 
+} 
+
+.skillsContainer img {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+} 
+
+.skillsContainer img:hover {
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    transition: all 0.2s;
+} 
+
+/* black and white icons with no color */ 
+.skillsIcons {
+    opacity: 50%;
+}
+.skillsIcons:hover {
+    opacity: 100%;
+    transition: all 0.2s;
+}
+
+
+/********** projects **********/ 
+
+h4 {
+    font-size: 0.9rem; 
+    color: white; 
+} 
+
+.projectTextContainer h2 {
+    text-align: center;
+} 
+
+.portfolioItem {
+    display: flex; 
+    flex-direction: row;
+    margin: 100px 0; 
+} 
+
+.projectImgContainer,
+.projectTextContainer {
+    width: 50%; 
+    padding: 0 25px; 
+} 
+
+
+/********** doodles **********/ 
+
+.gallery-cell {
+    width: 30%;
+    height: auto; 
+    margin: 0 5px;
+    background-color: $color-medium; 
+    counter-increment: gallery-cell;
+    transition: all 0.2s;
+}
+
+.gallery-cell.is-selected {
+    background-color: $color-primary;
+}
+
+/********** contact **********/ 
+
+.socialLinks {
+    background-color: white; 
+}
+
+.socialLinks ul {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+} 
+
+.socialLinks li {
+    width: 200px; 
+    height: 200px; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+} 
+
+.socialLinks i {
+    font-size: 2.5rem;
+    margin: 10px; 
+}
+
+/* .contactContainer {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: 2px solid blue; 
+}  */
+
+/* form {
+    text-align: left;
+}
+
+input, 
+textarea {
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.6;
+    border: 0;
+    margin: 15px auto; 
+} 
+
+textarea {
+    resize: none;
+    width: 100%; 
+    height: 250px; 
+}
+
+
+/********** footer  **********/ 
+
+footer {
+    margin-top: 100px; 
+	padding: 40px 0;
+    color: #9C9AB3;
+    font-size: 0.7rem;
+}
+
+
+/********** home button **********/ 
+
+#homeButton {
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 25px; 
+    z-index: 99;
+    font-size: 2rem;
+    cursor: pointer;
+    border: none; 
+    background: none; 
+}
+
+#homeButton:hover {
+    opacity: 80%; 
+    transition: all 0.2s;
+}

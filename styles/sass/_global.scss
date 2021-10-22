@@ -1,0 +1,47 @@
+/********** global **********/ 
+
+html {
+    font-size: 125%; 
+} 
+
+body {
+    font-family: $font-primary; 
+    text-align: center;
+    font-size: 0.8rem; 
+    background-color: $color-light; 
+    line-height: 1.7; 
+    overflow-x: hidden; 
+} 
+
+.wrapper {
+    width: 90%; 
+    margin: 0 auto; 
+    max-width: 1080px; 
+}
+
+section {
+	padding-top: 110px;
+	position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $color-dark; 
+    font-weight: 700; 
+} 
+
+/* h3 {
+    font-size: 1.2rem; 
+}  */
+
+ul {
+    padding: 0; 
+} 
+
+li {
+    list-style-type: none;
+} 
+
+img {
+    width: 100%; 
+    height: auto; 
+} 
