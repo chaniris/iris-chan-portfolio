@@ -1,0 +1,35 @@
+// hide hamburger
+#hamNav label, 
+#hamburger { 
+    display: none; 
+}
+
+@media (max-width: 768px) {
+    #hamItems a {
+    display: block;
+    width: 100%;
+    }
+    // show hamburger icon 
+    #hamNav label { 
+    display: inline-block; 
+    color: white;
+    background: $color-primary;
+    padding: 10px;
+    cursor: pointer;
+    }
+    #hamNav label:hover { 
+        color: $color-dark;
+        transition: all 0.2s; 
+    }
+    // toggle show/hide menu 
+    #hamItems { 
+        display: none; 
+    }
+    #hamNav input:checked ~ #hamItems { 
+        display: block; 
+    }
+    #hamNav input:focus + .checkbox
+    {
+        background-color: red;
+    }
+}
