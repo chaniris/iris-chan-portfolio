@@ -283,12 +283,18 @@ img {
 }
 
 /********** header **********/
-header {
-  height: 100vh;
-}
-
-.intro {
-  padding: 50px;
+.homeContainer {
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 h1 {
@@ -298,10 +304,23 @@ h1 {
 .headerImg {
   width: 100px;
   margin: 0 auto;
-  margin-top: 100px;
 }
 
 /********** nav **********/
+.headerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 10vh;
+}
+
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -607,10 +626,6 @@ footer {
 }
 /* landscape phone to portrait tablet */
 @media (max-width: 768px) {
-  .headerImg {
-    margin-top: 50px;
-  }
-
   .aboutTextContainer {
     width: 70%;
   }
@@ -650,10 +665,6 @@ footer {
 }
 /* landscape phones and down */
 @media (max-width: 480px) {
-  .headerImg {
-    margin-top: 25px;
-  }
-
   .aboutContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

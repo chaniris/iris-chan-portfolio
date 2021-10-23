@@ -21,20 +21,17 @@
         padding: 0 10px; 
     } 
     .gallery-cell {
-    width: 50%;
+        width: 50%;
     }
     #homeButton {
-    bottom: 20px;
-    right: 20px; 
-    font-size: 1.8rem;
+        bottom: 20px;
+        right: 20px; 
+        font-size: 1.8rem;
     }
 }
 
 /* landscape phone to portrait tablet */
 @media (max-width: 768px) {
-    .headerImg {
-        margin-top: 50px;
-    } 
     .aboutTextContainer {
         width: 70%; 
     } 
@@ -58,17 +55,14 @@
         padding: 0px;
     }
     #homeButton {
-    bottom: 10px;
-    right: 10px; 
-    font-size: 1.8rem;
+        bottom: 10px;
+        right: 10px; 
+        font-size: 1.8rem;
     }
 }
 
 /* landscape phones and down */
 @media (max-width: 480px) {
-    .headerImg {
-        margin-top: 25px;
-    } 
     .aboutContainer {
         flex-direction: column; 
     } 
