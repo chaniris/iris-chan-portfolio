@@ -318,7 +318,6 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 10vh;
 }
 
 nav ul {
@@ -359,9 +358,6 @@ nav a:hover {
   border-bottom: 2px solid #353353;
 }
 
-/* .header i {
-    margin: 10px; 
-}  */
 /********** about **********/
 .aboutContainer {
   display: -webkit-box;
@@ -395,7 +391,7 @@ h2 {
 
 /* button, */
 a.button {
-  color: white;
+  color: #F9F9FF;
   background-color: #FFD15C;
   border-radius: 30px;
   font-size: 0.8rem;

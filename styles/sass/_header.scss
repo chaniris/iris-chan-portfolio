@@ -23,7 +23,7 @@ h1 {
     display: flex; 
     flex-direction: column;
     justify-content: center;
-    height: 10vh; 
+    // height: 10vh; 
 } 
 
 nav ul {
@@ -55,10 +55,6 @@ nav a:hover {
     border-bottom: 2px solid $color-dark; 
 } 
 
-/* .header i {
-    margin: 10px; 
-}  */
-
 
 /********** about **********/ 
 
@@ -87,7 +83,7 @@ h2 {
 
 /* button, */
 a.button {
-    color: white; 
+    color: $color-light; 
     background-color: $color-primary;
     border-radius: 30px;
     font-size: 0.8rem; 
