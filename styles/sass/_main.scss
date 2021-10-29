@@ -76,50 +76,13 @@ h4 {
 
 /********** contact **********/ 
 
-.socialLinks {
-    background-color: white; 
-}
-
-.socialLinks ul {
+.contactContainer {
     display: flex; 
     flex-direction: row;
     justify-content: space-evenly;
-} 
-
-.socialLinks li {
-    width: 200px; 
-    height: 200px; 
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-} 
-
-// contact me links 
-.socialLinks a,
-.socialLinks a:visited {
-    color: $color-primary; 
-    text-decoration: none;
-} 
-
-.socialLinks a:focus,
-.socialLinks a:hover {
-    color: $color-dark; 
-    transition: all 0.2s;
-}  
-
-.socialLinks i {
-    font-size: 2.5rem;
-    margin: 10px; 
 }
 
-/* .contactContainer {
-    display: flex; 
-    flex-direction: row;
-    justify-content: space-evenly;
-    border: 2px solid blue; 
-}  */
-
-/* form {
+form {
     text-align: left;
 }
 
@@ -132,6 +95,7 @@ textarea {
     line-height: 1.6;
     border: 0;
     margin: 15px auto; 
+    border: 2px solid #dadada;
 } 
 
 textarea {
@@ -139,6 +103,46 @@ textarea {
     width: 100%; 
     height: 250px; 
 }
+
+button,
+#homeButton {
+    cursor: pointer; 
+}  
+
+// .socialLinksContainer {
+//     background-color: white; 
+// }
+
+// .socialLinksContainer ul {
+//     display: flex; 
+//     flex-direction: row;
+//     justify-content: space-evenly;
+// } 
+
+// .socialLinksContainer li {
+//     width: 200px; 
+//     height: 200px; 
+//     display: flex; 
+//     flex-direction: column;
+//     justify-content: center;
+// } 
+
+// .socialLinksContainer a,
+// .socialLinksContainer a:visited {
+//     color: $color-primary; 
+//     text-decoration: none;
+// } 
+
+// .socialLinksContainer a:focus,
+// .socialLinksContainer a:hover {
+//     color: $color-dark; 
+//     transition: all 0.2s;
+// }  
+
+// .socialLinksContainer i {
+//     font-size: 2.5rem;
+//     margin: 10px; 
+// }
 
 
 /********** footer  **********/ 
@@ -160,7 +164,6 @@ footer {
     right: 25px; 
     z-index: 99;
     font-size: 2rem;
-    cursor: pointer;
     border: none; 
     background: none; 
 }

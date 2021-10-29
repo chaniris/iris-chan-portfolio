@@ -4,8 +4,12 @@ html {
     font-size: 125%; 
 } 
 
+body, 
+button {
+    font-family: $font-primary;
+} 
+
 body {
-    font-family: $font-primary; 
     text-align: center;
     font-size: 0.8rem; 
     background-color: $color-light; 
