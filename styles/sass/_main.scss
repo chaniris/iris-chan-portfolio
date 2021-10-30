@@ -117,42 +117,6 @@ button,
     cursor: pointer; 
 }  
 
-// .socialLinksContainer {
-//     background-color: white; 
-// }
-
-.socialLinksContainer ul {
-    display: flex; 
-    flex-direction: row;
-    justify-content: space-evenly;
-} 
-
-.socialLinksContainer li {
-    width: 150px; 
-    height: 150px; 
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-} 
-
-.toronto, 
-.socialLinksContainer a,
-.socialLinksContainer a:visited {
-    color: $color-primary; 
-    text-decoration: none;
-} 
-
-.socialLinksContainer a:focus,
-.socialLinksContainer a:hover {
-    color: $color-dark; 
-    transition: all 0.2s;
-}  
-
-.socialLinksContainer i {
-    font-size: 1.5rem;
-    margin: 10px; 
-}
-
 
 /********** footer  **********/ 
 
