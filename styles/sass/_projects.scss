@@ -1,0 +1,21 @@
+/********** projects **********/ 
+
+h3 {
+    font-size: 1rem; 
+} 
+
+h4 {
+    font-size: 0.8rem; 
+} 
+
+.portfolioItem {
+    display: flex; 
+    flex-direction: row;
+    margin: 100px 0; 
+} 
+
+.projectImgContainer,
+.projectTextContainer {
+    width: 50%; 
+    padding: 0 25px; 
+} 

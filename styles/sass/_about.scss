@@ -1,0 +1,72 @@
+/********** about **********/ 
+
+.aboutContainer {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+} 
+
+h2 {
+    text-align: left;
+    font-size: 1.4rem; 
+    padding: 0 25px; 
+} 
+
+.f1Img {
+    width: 250px; 
+    margin: 25px 0; 
+} 
+
+.aboutTextContainer {
+    text-align: left;
+    width: 50%; 
+    padding: 25px 50px;  
+} 
+
+button,
+a.button {
+    color: $color-light; 
+    background-color: $color-primary;
+    border-radius: 30px;
+    font-size: 0.8rem; 
+    padding: 10px 30px; 
+    border: none; 
+    font-weight: 700; 
+} 
+
+
+/********** skills **********/ 
+
+.skillsContainer ul {
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    justify-content: center;
+    width: 80%; 
+    margin: 0 auto; 
+} 
+
+.skillsContainer ul li {
+    width: 80px; 
+    margin: 10px 50px; 
+} 
+
+.skillsContainer img {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+} 
+
+.skillsContainer img:hover {
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    transition: all 0.2s;
+} 
+
+/* black and white icons with no color */ 
+.skillsIcons {
+    opacity: 50%;
+}
+.skillsIcons:hover {
+    opacity: 100%;
+    transition: all 0.2s;
+}

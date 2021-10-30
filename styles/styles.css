@@ -296,6 +296,7 @@ img {
           justify-content: center;
 }
 
+/********** nav bar **********/
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -329,6 +330,7 @@ nav li {
   border-bottom: 2px solid #FFD15C;
 }
 
+/********** title container **********/
 .homeContainer {
   height: 90vh;
   display: -webkit-box;
@@ -437,6 +439,39 @@ h1 {
   transition: all 0.2s;
 }
 
+#hamNav label,
+#hamburger {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #hamItems a {
+    display: block;
+    width: 100%;
+  }
+
+  #hamNav label {
+    display: inline-block;
+    color: white;
+    background: #FFD15C;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  #hamNav label:hover {
+    color: #353353;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+
+  #hamItems {
+    display: none;
+  }
+
+  #hamNav input:checked ~ #hamItems {
+    display: block;
+  }
+}
 /********** about **********/
 .aboutContainer {
   display: -webkit-box;
@@ -536,10 +571,6 @@ h4 {
   font-size: 0.8rem;
 }
 
-.projectTextContainer h2 {
-  text-align: center;
-}
-
 .portfolioItem {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -626,7 +657,7 @@ footer {
   font-size: 0.7rem;
 }
 
-/********** home button **********/
+/********** return to top button **********/
 #homeButton {
   display: none;
   position: fixed;
@@ -826,38 +857,5 @@ footer {
 
   #homeButton {
     visibility: hidden;
-  }
-}
-#hamNav label,
-#hamburger {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  #hamItems a {
-    display: block;
-    width: 100%;
-  }
-
-  #hamNav label {
-    display: inline-block;
-    color: white;
-    background: #FFD15C;
-    padding: 10px;
-    cursor: pointer;
-  }
-
-  #hamNav label:hover {
-    color: #353353;
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s;
-  }
-
-  #hamItems {
-    display: none;
-  }
-
-  #hamNav input:checked ~ #hamItems {
-    display: block;
   }
 }

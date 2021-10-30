@@ -1,0 +1,27 @@
+/********** footer  **********/ 
+
+footer {
+    margin-top: 100px; 
+	padding: 40px 0;
+    color: #9C9AB3;
+    font-size: 0.7rem;
+}
+
+
+/********** return to top button **********/ 
+
+#homeButton {
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 25px; 
+    z-index: 99;
+    font-size: 2rem;
+    border: none; 
+    background: none; 
+}
+
+#homeButton:hover {
+    opacity: 80%; 
+    transition: all 0.2s;
+}

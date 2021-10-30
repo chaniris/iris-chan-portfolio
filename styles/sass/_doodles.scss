@@ -1,0 +1,14 @@
+/********** doodles **********/ 
+
+.gallery-cell {
+    width: 30%;
+    height: auto; 
+    margin: 0 5px;
+    background-color: $color-medium; 
+    counter-increment: gallery-cell;
+    transition: all 0.2s;
+}
+
+.gallery-cell.is-selected {
+    background-color: $color-primary;
+}

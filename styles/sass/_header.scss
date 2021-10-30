@@ -2,22 +2,21 @@
     display: flex; 
     flex-direction: column;
     justify-content: center;
-    // height: 10vh; 
 } 
 
-// nav link container 
+
+/********** nav bar **********/ 
+
 nav ul {
     display: flex; 
     flex-direction: row;
     justify-content: space-evenly;
 } 
 
-// nav link items 
 nav li {
     flex: 1; 
 } 
 
-// nav links 
 .headerContainer a,
 .headerContainer a:visited {
     color: $color-dark; 
@@ -31,7 +30,9 @@ nav li {
     border-bottom: 2px solid $color-primary; 
 }  
 
-// container holding main image and h1 
+
+/********** title container **********/ 
+
 .homeContainer {
     height: 90vh; 
     display: flex; 
@@ -114,41 +115,4 @@ h1 {
 .button:focus {
     color: $color-dark; 
     transition: all 0.2s;
-} 
-
-
-/********** about **********/ 
-
-.aboutContainer {
-    display: flex; 
-    flex-direction: row;
-    justify-content: space-evenly;
-} 
-
-h2 {
-    text-align: left;
-    font-size: 1.4rem; 
-    padding: 0 25px; 
-} 
-
-.f1Img {
-    width: 250px; 
-    margin: 25px 0; 
-} 
-
-.aboutTextContainer {
-    text-align: left;
-    width: 50%; 
-    padding: 25px 50px;  
-} 
-
-button,
-a.button {
-    color: $color-light; 
-    background-color: $color-primary;
-    border-radius: 30px;
-    font-size: 0.8rem; 
-    padding: 10px 30px; 
-    border: none; 
-    font-weight: 700; 
 } 
