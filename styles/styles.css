@@ -552,6 +552,11 @@ h4 {
           justify-content: space-evenly;
 }
 
+iframe {
+  width: 400px;
+  height: 400px;
+}
+
 form {
   text-align: left;
 }
@@ -577,6 +582,53 @@ textarea {
 button,
 #homeButton {
   cursor: pointer;
+}
+
+.socialLinksContainer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.socialLinksContainer li {
+  width: 150px;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.toronto,
+.socialLinksContainer a,
+.socialLinksContainer a:visited {
+  color: #FFD15C;
+  text-decoration: none;
+}
+
+.socialLinksContainer a:focus,
+.socialLinksContainer a:hover {
+  color: #353353;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.socialLinksContainer i {
+  font-size: 1.5rem;
+  margin: 10px;
 }
 
 /********** footer  **********/
@@ -609,6 +661,11 @@ footer {
 @media (max-width: 1400px) {
   .whitespace {
     width: 350px;
+  }
+
+  iframe {
+    width: 280px;
+    height: 400px;
   }
 }
 /* portrait tablet and small desktops */
@@ -705,9 +762,19 @@ footer {
 
   .contactContainer {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .map {
+    margin: 0 auto;
+  }
+
+  iframe {
+    width: 400px;
+    height: 250px;
+    margin-top: 50px;
   }
 
   form {
@@ -715,14 +782,18 @@ footer {
     margin: 0 auto;
   }
 
-  .contactImg {
-    width: 50%;
-    margin: 0 auto;
-  }
-
   .contactContainer .button {
     display: block;
     margin: 0 auto;
+  }
+
+  .socialLinksContainer ul li:first-child,
+.socialLinksContainer div {
+    display: none;
+  }
+
+  .socialLinksContainer i {
+    font-size: 2.5rem;
   }
 
   footer {
@@ -770,8 +841,17 @@ footer {
     width: 100%;
   }
 
+  iframe {
+    width: 300px;
+    height: 200px;
+  }
+
+  .socialLinksContainer i {
+    font-size: 1.8rem;
+  }
+
   #homeButton {
-    visibility: hidden;
+    display: none;
   }
 }
 #hamNav label,
