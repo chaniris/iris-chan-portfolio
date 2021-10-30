@@ -1,7 +1,16 @@
 /********** media queries **********/ 
 
+@media (max-width: 1400px) {
+    .whitespace {
+        width: 350px; 
+    } 
+}
+
 /* portrait tablet and small desktops */
 @media (max-width: 940px) {
+    .whitespace {
+        width: 280px;
+    } 
     .f1Img {
         width: 200px; 
     } 
@@ -44,6 +53,9 @@
 
 /* landscape phone to portrait tablet */
 @media (max-width: 768px) {
+    .whitespace {
+        width: 150px;
+    } 
     .aboutTextContainer {
         width: 70%; 
     } 
@@ -89,6 +101,16 @@
 
 /* landscape phones and down */
 @media (max-width: 480px) {
+    .whitespace {
+        width: 100px;
+    } 
+    .alien1,
+    .alien2 {
+        width: 95px; 
+    } 
+    .crocs {
+        margin: 0 auto; 
+    } 
     .aboutContainer {
         flex-direction: column; 
     } 
