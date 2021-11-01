@@ -22,9 +22,6 @@
 
     <!-- link to fontawesome -->
     <script src="https://kit.fontawesome.com/1eff98ce6d.js" crossorigin="anonymous"></script>
-
-    <!-- link to flickity library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css" media="screen">
 </head>
 <body>
     <button onclick="topFunction()" id="homeButton" aria-label='Back to top'>🔝</button>
@@ -279,19 +276,43 @@
         <section id='doodles' class="doodles">
             <div class="wrapper">
                 <h2>Doodles</h2>
-                <div class="gallery js-flickity">
-                    <img src="images/doodles/preview/gnome.png" alt="Drawing of gnome" class="gallery-cell" />
-                    <img src="images/doodles/viewMore/drums.png" alt="Drawing of drumset in snowglobe" class="gallery-cell" />
-                    <img src="images/doodles/viewMore/nike.png" alt="Drawing of sneakers" class="gallery-cell" />
-                    <img src="images/doodles/preview/chittychitty.png" alt="Drawing of Chitty Chitty Bang Bang film poster" class="gallery-cell" />
-                    <img src="images/doodles/preview/beach.png" alt="Drawing of girl at the beach with car" class="gallery-cell" />
-                    <img src="images/doodles/preview/cook.png" alt="Drawing of girl making breakfast with car" class="gallery-cell" />
-                    <img src="images/doodles/preview/carwash.png" alt="Drawing of girl washing car" class="gallery-cell" />
-                    <img src="images/doodles/preview/slide.png" alt="Drawing of girl on slide with car" class="gallery-cell" />
-                    <img src="images/doodles/viewMore/troll.jpg" alt="Drawing of troll in Christmas sweater" class="gallery-cell" />
-                    <img src="images/doodles/viewMore/doll.jpg" alt="Drawing of Ndebele doll" class="gallery-cell" />
-                    <img src="images/doodles/viewMore/foofighters.png" alt="Drawing of Pat Smear, Dave Grohl, and Taylor Hawkins from Foo Fighters" class="gallery-cell" />
-                    <img src="images/doodles/viewMore/seagull.gif" alt="Drawing of seagull" class="gallery-cell" />
+                <div class="galleryContainer">
+                    <li class="galleryCell">
+                        <img src="images/doodles/preview/gnome.png" alt="Drawing of gnome" />
+                    </li>
+                    <li class="galleryCell">
+                        <img src="images/doodles/viewMore/drums.png" alt="Drawing of drumset in snowglobe" />
+                    </li>
+                    <li class="galleryCell">
+                        <img src="images/doodles/viewMore/nike.png" alt="Drawing of sneakers" />
+                    </li>
+                    <li class="galleryCell">
+                        <img src="images/doodles/preview/chittychitty.png" alt="Drawing of Chitty Chitty Bang Bang film poster" />
+                    </li>
+                    <li class="galleryCell">
+                        <img src="images/doodles/preview/beach.png" alt="Drawing of girl at the beach with car" />
+                    </li>
+                    <li class="galleryCell">
+                        <img src="images/doodles/preview/cook.png" alt="Drawing of girl making breakfast with car" />
+                    </li>
+                    <li class="galleryCell">
+                        <img src="images/doodles/preview/carwash.png" alt="Drawing of girl washing car" />
+                    </li>
+                    <li class="galleryCell">
+                        <img src="images/doodles/preview/slide.png" alt="Drawing of girl on slide with car" />
+                    </li>
+                    <li class="galleryCell">
+                        <img src="images/doodles/viewMore/troll.jpg" alt="Drawing of troll in Christmas sweater" />
+                    </li>
+                    <li class="galleryCell">
+                        <img src="images/doodles/viewMore/doll.jpg" alt="Drawing of Ndebele doll" />
+                    </li>
+                    <li class="galleryCell">
+                        <img src="images/doodles/viewMore/foofighters.png" alt="Drawing of Pat Smear, Dave Grohl, and Taylor Hawkins from Foo Fighters" />
+                    </li>
+                    <li class="galleryCell">
+                        <img src="images/doodles/viewMore/seagull.gif" alt="Drawing of seagull" />
+                    </li>
                 </div>
             </div>
         </section>
@@ -304,8 +325,8 @@
                 <div class="contactContainer">
                     <div class="map">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23093.454579871417!2d-79.3966768905088!3d43.654787763662405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb34d27310bd%3A0xba15d20622070393!2sDowntown%20Toronto%2C%20Toronto%2C%20ON!5e0!3m2!1sen!2sca!4v1635568553659!5m2!1sen!2sca"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23093.454579871417!2d-79.3966768905088!3d43.654787763662405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb34d27310bd%3A0xba15d20622070393!2sDowntown%20Toronto%2C%20Toronto%2C%20ON!5e0!3m2!1sen!2sca!4v1635568553659!5m2!1sen!2sca" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
                     </div>
                     <form target="_blank"  
                     action="https://formsubmit.co/4545a92755aca17e0463163cea0e756a " method="POST">
@@ -335,8 +356,5 @@
 
     <!-- link to js -->
     <script src="script.js"></script>
-
-    <!-- link to flickity (library) js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
 </body>
 </html>

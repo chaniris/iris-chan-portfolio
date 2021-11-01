@@ -589,18 +589,31 @@ h4 {
 }
 
 /********** doodles **********/
-.gallery-cell {
-  width: 30%;
-  height: auto;
-  margin: 0 5px;
-  background-color: #999;
-  counter-increment: gallery-cell;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+.galleryContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.gallery-cell.is-selected {
+.galleryCell {
+  width: 320px;
+  margin: 5px;
+  opacity: 80%;
+}
+
+.galleryCell:hover {
   background-color: #FFD15C;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  opacity: 100%;
 }
 
 /********** contact **********/
@@ -618,6 +631,7 @@ h4 {
 }
 
 iframe {
+  border-radius: 20px;
   width: 400px;
   height: 400px;
   -webkit-filter: grayscale(100%);
@@ -727,8 +741,8 @@ footer {
     padding: 0 10px;
   }
 
-  .gallery-cell {
-    width: 50%;
+  .galleryCell {
+    width: 300px;
   }
 
   form {
@@ -785,8 +799,8 @@ footer {
     margin: 0 auto;
   }
 
-  .gallery-cell {
-    width: 70%;
+  .galleryCell {
+    width: 250px;
   }
 
   .contactContainer {
@@ -857,7 +871,11 @@ footer {
     text-align: center;
   }
 
-  .gallery-cell {
+  .skillsContainer ul li {
+    width: 70px;
+  }
+
+  .galleryCell {
     width: 100%;
   }
 
