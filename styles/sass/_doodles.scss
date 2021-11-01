@@ -10,11 +10,8 @@
 .galleryCell {
     width: 320px;
     margin: 5px;
-    opacity: 80%; 
 }
 
-.galleryCell:hover {
-    background-color: $color-primary; 
-    transition: all 0.2s; 
-    opacity: 100%; 
-} 
+.galleryCell img {
+    border-radius: 20px;
+}
