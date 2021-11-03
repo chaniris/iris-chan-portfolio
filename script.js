@@ -1,15 +1,3 @@
-/********** smooth page scroll **********/
-
-document.querySelectorAll('.anchor').forEach(anchor => {
-
-    anchor.addEventListener('click', function(event) {
-        event.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-    });
-    
-});
-
 /********** back to top button **********/
 
 // get button
