@@ -628,21 +628,11 @@ h4 {
           justify-content: space-evenly;
 }
 
-iframe {
-  border-radius: 20px;
-  width: 400px;
-  height: 400px;
-  -webkit-filter: grayscale(100%);
-  /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
-}
-
-iframe:hover {
-  -webkit-filter: grayscale(0%);
-  /* Safari 6.0 - 9.0 */
-  filter: grayscale(0%);
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+.headShot {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 350px;
+  height: 350px;
 }
 
 form {
@@ -702,11 +692,6 @@ footer {
 @media (max-width: 1400px) {
   .whitespace {
     width: 350px;
-  }
-
-  iframe {
-    width: 280px;
-    height: 400px;
   }
 }
 /* portrait tablet and small desktops */
@@ -803,19 +788,13 @@ footer {
 
   .contactContainer {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
-  .map {
-    margin: 0 auto;
-  }
-
-  iframe {
-    width: 400px;
-    height: 250px;
-    margin-top: 50px;
+  .headShot {
+    margin: 25px auto;
   }
 
   form {
@@ -870,16 +849,16 @@ footer {
   }
 
   .skillsContainer ul li {
-    width: 70px;
+    width: 65px;
   }
 
   .galleryCell {
     width: 100%;
   }
 
-  iframe {
-    width: 300px;
-    height: 200px;
+  .headShot {
+    width: 280px;
+    height: 280px;
   }
 
   #homeButton {
