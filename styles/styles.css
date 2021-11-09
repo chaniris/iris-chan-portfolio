@@ -812,8 +812,7 @@ footer {
     margin: 0 auto;
   }
 
-  .doodles .carouselContainer,
-.doodles .carouselCaption {
+  .doodles .carouselContainer {
     width: 350px;
   }
   .doodles .prev {
