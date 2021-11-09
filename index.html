@@ -277,43 +277,86 @@
         <section id='doodles' class="doodles">
             <div class="wrapper">
                 <h2>Doodles</h2>
-                <div class="galleryContainer">
-                    <li class="galleryCell">
-                        <img src="images/doodles/preview/gnome.png" alt="Drawing of gnome" />
-                    </li>
-                    <li class="galleryCell">
-                        <img src="images/doodles/viewMore/drums.png" alt="Drawing of drumset in snowglobe" />
-                    </li>
-                    <li class="galleryCell">
-                        <img src="images/doodles/viewMore/nike.png" alt="Drawing of sneakers" />
-                    </li>
-                    <li class="galleryCell">
-                        <img src="images/doodles/preview/chittychitty.png" alt="Drawing of Chitty Chitty Bang Bang film poster" />
-                    </li>
-                    <li class="galleryCell">
-                        <img src="images/doodles/preview/beach.png" alt="Drawing of girl at the beach with car" />
-                    </li>
-                    <li class="galleryCell">
-                        <img src="images/doodles/preview/cook.png" alt="Drawing of girl making breakfast with car" />
-                    </li>
-                    <li class="galleryCell">
-                        <img src="images/doodles/preview/carwash.png" alt="Drawing of girl washing car" />
-                    </li>
-                    <li class="galleryCell">
-                        <img src="images/doodles/preview/slide.png" alt="Drawing of girl on slide with car" />
-                    </li>
-                    <li class="galleryCell">
-                        <img src="images/doodles/viewMore/troll.jpg" alt="Drawing of troll in Christmas sweater" />
-                    </li>
-                    <li class="galleryCell">
-                        <img src="images/doodles/viewMore/doll.jpg" alt="Drawing of Ndebele doll" />
-                    </li>
-                    <li class="galleryCell">
-                        <img src="images/doodles/viewMore/foofighters.png" alt="Drawing of Pat Smear, Dave Grohl, and Taylor Hawkins from Foo Fighters" />
-                    </li>
-                    <li class="galleryCell">
-                        <img src="images/doodles/viewMore/seagull.gif" alt="Drawing of seagull" />
-                    </li>
+                <div class="carouselContainer">
+                    <div class="carouselImgs">
+                        <li>
+                            <img class="carouselImg visible" src="images/doodles/preview/beach.png" alt="Drawing of girl at the beach with car" />
+                        </li>
+                        <li>
+                            <img class="carouselImg hidden" src="images/doodles/preview/cook.png"
+                                alt="Drawing of girl making breakfast with car" />
+                        </li>
+                        <li>
+                            <img class="carouselImg hidden" src="images/doodles/preview/carwash.png" alt="Drawing of girl washing car" />
+                        </li>
+                        <li>
+                            <img class="carouselImg hidden" src="images/doodles/preview/slide.png" alt="Drawing of girl on slide with car" />
+                        </li>
+                        <li>
+                            <img class="carouselImg hidden" src="images/doodles/preview/gnome.png" alt="Drawing of gnomes" />
+                        </li>
+                        <li>
+                            <img class="carouselImg hidden" src="images/doodles/viewMore/drums.png" alt="Drawing of drumset in snowglobe" />
+                        </li>
+                        <li>
+                            <img class="carouselImg hidden" src="images/doodles/viewMore/nike.png" alt="Drawing of sneakers" />
+                        </li>
+                        <li>
+                            <img class="carouselImg hidden" src="images/doodles/preview/chittychitty.png"
+                                alt="Drawing of Chitty Chitty Bang Bang film poster" />
+                        </li>
+                        <li>
+                            <img class="carouselImg hidden" src="images/doodles/viewMore/troll.jpg" alt="Drawing of troll in Christmas sweater" />
+                        </li>
+                        <li>
+                            <img class="carouselImg hidden" src="images/doodles/viewMore/doll.jpg" alt="Drawing of Ndebele doll" />
+                        </li>
+                        <li>
+                            <img class="carouselImg hidden" src="images/doodles/viewMore/foofighters.png"
+                                alt="Drawing of Pat Smear, Dave Grohl, and Taylor Hawkins from Foo Fighters" />
+                        </li>
+                        <li>
+                            <img class="carouselImg hidden" src="images/doodles/viewMore/seagull.gif" alt="Drawing of seagulls" />
+                        </li>
+                    </div>
+                    <button class="prev arrow button">
+                        <i class="fas fa-chevron-left">
+                            <span class="sr-only">Previous</span>
+                        </i>
+                    </button>
+                    <button class="next arrow button">
+                        <i class="fas fa-chevron-right">
+                            <span class="sr-only">Next</span>
+                        </i>
+                    </button>
+                    <div class="imgNumbers">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                <div class="carouselCaptions">
+                    <p class="carouselCaption visible">Beachday</p>
+                    <p class="carouselCaption hidden">Breakfast Time</p>
+                    <p class="carouselCaption hidden">Car Wash</p>
+                    <p class="carouselCaption hidden">Play Time</p>
+                    <p class="carouselCaption hidden">Gnomes</p>
+                    <p class="carouselCaption hidden">Christmas Drums</p>
+                    <p class="carouselCaption hidden">Sneakers</p>
+                    <p class="carouselCaption hidden">Chitty Chitty Bang Bang Film Poster</p>
+                    <p class="carouselCaption hidden">Christmas Troll</p>
+                    <p class="carouselCaption hidden">Ndebele Doll</p>
+                    <p class="carouselCaption hidden">Foo Fighters</p>
+                    <p class="carouselCaption hidden">Seagull Friends @ Nathan Phillips Square, Toronto</p>
                 </div>
             </div>
         </section>

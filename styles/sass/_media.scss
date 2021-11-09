@@ -34,9 +34,6 @@
     .projectTextContainer {
         padding: 0 10px; 
     } 
-    .galleryCell {
-        width: 300px;
-    }
     form {
         width: 40%; 
     } 
@@ -76,9 +73,18 @@
         width: 90%; 
         margin: 0 auto; 
     }
-    .galleryCell {
-        width: 250px;
-    }
+    .doodles {
+        .carouselContainer,
+        .carouselCaption {
+            width: 350px; 
+        } 
+        .prev {
+            left: -40px; 
+        } 
+        .next {
+            right: -40px; 
+        } 
+    } 
     .contactContainer {
         flex-direction: column;
         // flex-direction: column-reverse;
@@ -137,9 +143,16 @@
     .skillsContainer ul li {
         width: 65px; 
     } 
-    .galleryCell {
-        width: 100%;
-    }
+    .doodles {
+        .prev {
+            left: 0; 
+            top: 0; 
+        } 
+        .next {
+            right: 0; 
+            top: 0; 
+        } 
+    } 
     .headShot {
         width: 280px;
         height: 280px; 
