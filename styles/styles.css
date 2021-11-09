@@ -746,12 +746,21 @@ footer {
     width: 90%;
   }
 
-  .projectTextContainer h2 {
-    margin: 0;
-  }
-
   .portfolioItem {
     margin: 50px 0;
+  }
+
+  .projectImgContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .projectTextContainer {
@@ -816,10 +825,15 @@ footer {
     width: 350px;
   }
   .doodles .prev {
-    left: -40px;
+    left: 0;
+    bottom: 0;
   }
   .doodles .next {
-    right: -40px;
+    right: 0;
+    bottom: 0;
+  }
+  .doodles .arrow {
+    top: unset;
   }
 
   .contactContainer {
@@ -886,15 +900,6 @@ footer {
 
   .skillsContainer ul li {
     width: 65px;
-  }
-
-  .doodles .prev {
-    left: 0;
-    top: 0;
-  }
-  .doodles .next {
-    right: 0;
-    top: 0;
   }
 
   .headShot {
