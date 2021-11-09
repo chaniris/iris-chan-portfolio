@@ -25,11 +25,13 @@
     .skillsContainer ul {
         width: 90%; 
     } 
-    .projectTextContainer h2 {
-        margin: 0; 
-    } 
     .portfolioItem {
         margin: 50px 0; 
+    } 
+    .projectImgContainer {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
     } 
     .projectTextContainer {
         padding: 0 10px; 
@@ -78,11 +80,16 @@
             width: 350px; 
         } 
         .prev {
-            left: -40px; 
+            left: 0; 
+            bottom: 0; 
         } 
         .next {
-            right: -40px; 
+            right: 0; 
+            bottom: 0; 
         } 
+        .arrow {
+            top: unset;  
+        }
         // .carouselCaption {
         //     width: 350px; 
         // } 
@@ -144,17 +151,7 @@
     } 
     .skillsContainer ul li {
         width: 65px; 
-    } 
-    .doodles {
-        .prev {
-            left: 0; 
-            top: 0; 
-        } 
-        .next {
-            right: 0; 
-            top: 0; 
-        } 
-    } 
+    }  
     .headShot {
         width: 280px;
         height: 280px; 
