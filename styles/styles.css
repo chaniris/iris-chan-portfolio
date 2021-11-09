@@ -284,6 +284,12 @@ img {
   height: auto;
 }
 
+a,
+button {
+  border: none !important;
+  outline: none !important;
+}
+
 .headerContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -512,7 +518,6 @@ a.button {
   border-radius: 30px;
   font-size: 0.8rem;
   padding: 10px 30px;
-  border: none;
   font-weight: 700;
 }
 
@@ -591,27 +596,57 @@ h4 {
 }
 
 /********** doodles **********/
-.galleryContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+.doodles .hidden {
+  display: none;
 }
-
-.galleryCell {
-  width: 320px;
-  margin: 5px;
+.doodles .visible {
+  display: block;
 }
-
-.galleryCell img {
-  border-radius: 20px;
+.doodles .carouselContainer {
+  border: 2px solid #dadada;
+  position: relative;
+  margin: 0 auto;
+  width: 400px;
+}
+.doodles .prev {
+  left: -100px;
+}
+.doodles .next {
+  right: -100px;
+}
+.doodles .arrow {
+  position: absolute;
+  display: inline;
+  top: 50%;
+}
+.doodles .imgNumbers {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 25px;
+}
+.doodles .imgNumbers .dot {
+  background-color: rgba(204, 204, 204, 0.3);
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 2px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.doodles .imgNumbers .dot:hover,
+.doodles .imgNumbers .active {
+  background-color: #cccccc;
+  width: 12px;
+  height: 12px;
+}
+.doodles .carouselCaption {
+  background-color: rgba(204, 204, 204, 0.8);
+  width: 400px;
+  margin: 10px auto;
+  padding: 0.5rem;
+  border-radius: 2px;
+  border: 2px solid #dadada;
 }
 
 /********** contact **********/
@@ -678,7 +713,6 @@ footer {
   right: 25px;
   z-index: 99;
   font-size: 2rem;
-  border: none;
   background: none;
 }
 
@@ -722,10 +756,6 @@ footer {
 
   .projectTextContainer {
     padding: 0 10px;
-  }
-
-  .galleryCell {
-    width: 300px;
   }
 
   form {
@@ -782,8 +812,15 @@ footer {
     margin: 0 auto;
   }
 
-  .galleryCell {
-    width: 250px;
+  .doodles .carouselContainer,
+.doodles .carouselCaption {
+    width: 350px;
+  }
+  .doodles .prev {
+    left: -40px;
+  }
+  .doodles .next {
+    right: -40px;
   }
 
   .contactContainer {
@@ -852,8 +889,13 @@ footer {
     width: 65px;
   }
 
-  .galleryCell {
-    width: 100%;
+  .doodles .prev {
+    left: 0;
+    top: 0;
+  }
+  .doodles .next {
+    right: 0;
+    top: 0;
   }
 
   .headShot {
