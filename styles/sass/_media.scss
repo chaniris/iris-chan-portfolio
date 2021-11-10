@@ -4,22 +4,6 @@
     .whitespace {
         width: 350px; 
     } 
-    .aboutTextContainer {
-        margin-top: -50px; 
-        background-image: url(../images/background/speech-450-shadow.png);
-    } 
-    .content {
-        height: 90%; 
-    } 
-    .content p {
-        padding: 0; 
-    } 
-}
-
-@media (max-width: 1080px) {
-    .content {
-        margin-top: -35px; 
-    } 
 }
 
 /* portrait tablet and small desktops */
@@ -27,21 +11,13 @@
     .whitespace {
         width: 280px;
     } 
-    .f1Img {
-        width: 200px; 
-        margin-top: 0px; 
-    } 
-    .aboutTextContainer {
-        text-align: left;
-        width: 50%; 
-        background-image: none;
-        margin-top: 0px; 
-    } 
-    .content {
-        padding: 0; 
-        margin: 0; 
-        height: auto; 
+    .aboutTextContainer::before {
+        bottom: 40%;
     }
+    .content {
+        margin: 20px 0; 
+        margin-bottom: 40px; 
+    } 
     .skillsContainer ul {
         width: 90%; 
     } 
@@ -84,15 +60,21 @@
         flex-direction: column;
     } 
     .f1Img {
-        width: 300px; 
         margin: 0 auto; 
     } 
     .aboutTextContainer {
         text-align: center;
         width: 80%; 
-        margin: 0 auto;
+        margin: 0 auto; 
         margin-top: 50px; 
-    } 
+    }
+    .aboutTextContainer::before {
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 20px solid white;
+        left: 50%;
+        top: -40px;
+    }
     .skillsContainer ul {
         width: 100%; 
     } 
@@ -160,11 +142,11 @@
         margin: 0 auto; 
     } 
     .f1Img {
-        width: 250px; 
+        width: 200px; 
     } 
     .aboutTextContainer {
-        margin-top: 25px; 
-    } 
+        padding: 0 20px;
+    }
     .skillsContainer ul li {
         width: 65px; 
     }  
