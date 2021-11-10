@@ -602,30 +602,37 @@ h4 {
 .doodles .visible {
   display: block;
 }
-.doodles .carouselContainer {
-  border: 2px solid #dadada;
+
+.carouselContainer {
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   position: relative;
   margin: 0 auto;
   width: 400px;
 }
-.doodles .prev {
-  left: -100px;
+
+.prev {
+  left: -110px;
 }
-.doodles .next {
-  right: -100px;
+
+.next {
+  right: -110px;
 }
-.doodles .arrow {
+
+.arrow {
   position: absolute;
   display: inline;
   top: 50%;
 }
-.doodles .imgNumbers {
+
+.imgNumbers {
   position: absolute;
   left: 0;
   right: 0;
   bottom: 25px;
 }
-.doodles .imgNumbers .dot {
+
+.dot {
   background-color: rgba(204, 204, 204, 0.3);
   display: inline-block;
   width: 10px;
@@ -634,19 +641,12 @@ h4 {
   border-radius: 50%;
   cursor: pointer;
 }
-.doodles .imgNumbers .dot:hover,
-.doodles .imgNumbers .active {
+
+.dot:hover,
+.active {
   background-color: #cccccc;
   width: 12px;
   height: 12px;
-}
-.doodles .carouselCaption {
-  background-color: rgba(204, 204, 204, 0.8);
-  width: 400px;
-  margin: 10px auto;
-  padding: 0.5rem;
-  border-radius: 2px;
-  border: 2px solid #dadada;
 }
 
 /********** contact **********/
@@ -821,19 +821,26 @@ footer {
     margin: 0 auto;
   }
 
-  .doodles .carouselContainer {
+  .carouselContainer {
     width: 350px;
   }
-  .doodles .prev {
-    left: 0;
-    bottom: 0;
+
+  .prev {
+    left: 10px;
+    bottom: 10px;
   }
-  .doodles .next {
-    right: 0;
-    bottom: 0;
+
+  .next {
+    right: 10px;
+    bottom: 10px;
   }
-  .doodles .arrow {
+
+  .arrow {
     top: unset;
+  }
+
+  .imgNumbers {
+    bottom: 50px;
   }
 
   .contactContainer {

@@ -4,11 +4,6 @@
     .whitespace {
         width: 350px; 
     } 
-    // iframe {
-    //     width: 280px; 
-    //     height: 400px; 
-    // } 
-    
 }
 
 /* portrait tablet and small desktops */
@@ -75,25 +70,23 @@
         width: 90%; 
         margin: 0 auto; 
     }
-    .doodles {
-        .carouselContainer {
-            width: 350px; 
-        } 
-        .prev {
-            left: 0; 
-            bottom: 0; 
-        } 
-        .next {
-            right: 0; 
-            bottom: 0; 
-        } 
-        .arrow {
-            top: unset;  
-        }
-        // .carouselCaption {
-        //     width: 350px; 
-        // } 
+    .carouselContainer {
+        width: 350px; 
     } 
+    .prev {
+        left: 10px; 
+        bottom: 10px; 
+    } 
+    .next {
+        right: 10px; 
+        bottom: 10px; 
+    } 
+    .arrow {
+        top: unset;  
+    }
+    .imgNumbers {
+        bottom: 50px;
+    }
     .contactContainer {
         flex-direction: column;
         // flex-direction: column-reverse;
@@ -101,14 +94,6 @@
     .headShot {
         margin: 25px auto;  
     } 
-    // .map {
-    //     margin: 0 auto; 
-    // }
-    // iframe {
-    //     width: 400px; 
-    //     height: 250px; 
-    //     margin-top: 50px; 
-    // } 
     form {
         width: 80%; 
         margin: 0 auto; 
@@ -156,10 +141,6 @@
         width: 280px;
         height: 280px; 
     } 
-    // iframe {
-    //     width: 300px; 
-    //     height: 200px; 
-    // } 
     #homeButton {
         visibility: hidden;
     }
