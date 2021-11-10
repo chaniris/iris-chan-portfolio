@@ -502,13 +502,37 @@ h2 {
 
 .f1Img {
   width: 250px;
-  margin: 25px 0;
+  margin-top: 100px;
 }
 
 .aboutTextContainer {
-  text-align: left;
+  text-align: center;
   width: 50%;
-  padding: 25px 50px;
+  background-image: url(../images/background/speech-500-shadow.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow-wrap: break-word;
+}
+
+.content {
+  padding: 50px;
+  margin-left: 25px;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content p {
+  margin-bottom: 20px;
+  padding: 0 25px;
 }
 
 button,
@@ -727,6 +751,24 @@ footer {
   .whitespace {
     width: 350px;
   }
+
+  .aboutTextContainer {
+    margin-top: -50px;
+    background-image: url(../images/background/speech-450-shadow.png);
+  }
+
+  .content {
+    height: 90%;
+  }
+
+  .content p {
+    padding: 0;
+  }
+}
+@media (max-width: 1080px) {
+  .content {
+    margin-top: -35px;
+  }
 }
 /* portrait tablet and small desktops */
 @media (max-width: 940px) {
@@ -736,10 +778,20 @@ footer {
 
   .f1Img {
     width: 200px;
+    margin-top: 0px;
   }
 
   .aboutTextContainer {
-    width: 60%;
+    text-align: left;
+    width: 50%;
+    background-image: none;
+    margin-top: 0px;
+  }
+
+  .content {
+    padding: 0;
+    margin: 0;
+    height: auto;
   }
 
   .skillsContainer ul {
@@ -799,8 +851,23 @@ footer {
     width: 150px;
   }
 
+  .aboutContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .f1Img {
+    width: 300px;
+    margin: 0 auto;
+  }
+
   .aboutTextContainer {
-    width: 70%;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
   }
 
   .skillsContainer ul {
@@ -889,20 +956,12 @@ footer {
     margin: 0 auto;
   }
 
-  .aboutContainer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-
   .f1Img {
-    margin: 0 auto;
+    width: 250px;
   }
 
   .aboutTextContainer {
-    width: 100%;
-    text-align: center;
+    margin-top: 25px;
   }
 
   .skillsContainer ul li {

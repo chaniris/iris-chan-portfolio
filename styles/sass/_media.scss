@@ -4,6 +4,22 @@
     .whitespace {
         width: 350px; 
     } 
+    .aboutTextContainer {
+        margin-top: -50px; 
+        background-image: url(../images/background/speech-450-shadow.png);
+    } 
+    .content {
+        height: 90%; 
+    } 
+    .content p {
+        padding: 0; 
+    } 
+}
+
+@media (max-width: 1080px) {
+    .content {
+        margin-top: -35px; 
+    } 
 }
 
 /* portrait tablet and small desktops */
@@ -13,10 +29,19 @@
     } 
     .f1Img {
         width: 200px; 
+        margin-top: 0px; 
     } 
     .aboutTextContainer {
-        width: 60%; 
+        text-align: left;
+        width: 50%; 
+        background-image: none;
+        margin-top: 0px; 
     } 
+    .content {
+        padding: 0; 
+        margin: 0; 
+        height: auto; 
+    }
     .skillsContainer ul {
         width: 90%; 
     } 
@@ -55,8 +80,18 @@
     .whitespace {
         width: 150px;
     } 
+    .aboutContainer {
+        flex-direction: column;
+    } 
+    .f1Img {
+        width: 300px; 
+        margin: 0 auto; 
+    } 
     .aboutTextContainer {
-        width: 70%; 
+        text-align: center;
+        width: 80%; 
+        margin: 0 auto;
+        margin-top: 50px; 
     } 
     .skillsContainer ul {
         width: 100%; 
@@ -124,15 +159,11 @@
     .crocs {
         margin: 0 auto; 
     } 
-    .aboutContainer {
-        flex-direction: column; 
-    } 
     .f1Img {
-        margin: 0 auto; 
+        width: 250px; 
     } 
     .aboutTextContainer {
-        width: 100%; 
-        text-align: center;
+        margin-top: 25px; 
     } 
     .skillsContainer ul li {
         width: 65px; 
