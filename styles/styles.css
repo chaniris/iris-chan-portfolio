@@ -334,7 +334,7 @@ nav li {
   color: #FFD15C;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-  border-bottom: 2px solid #FFD15C;
+  border-bottom: 2px solid #FFD15C !important;
 }
 
 /********** title container **********/
@@ -466,7 +466,7 @@ h1 {
   }
 
   #hamNav label:hover,
-#hamNav label:focus {
+#hamNav label:focus-within {
     color: #353353;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;

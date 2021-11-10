@@ -18,7 +18,7 @@
     cursor: pointer;
     }
     #hamNav label:hover,
-    #hamNav label:focus { 
+    #hamNav label:focus-within { 
         color: $color-dark;
         transition: all 0.2s; 
     }

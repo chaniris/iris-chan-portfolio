@@ -27,7 +27,7 @@ nav li {
 .headerContainer a:hover {
     color: $color-primary; 
     transition: all 0.2s;
-    border-bottom: 2px solid $color-primary; 
+    border-bottom: 2px solid $color-primary !important; 
 }  
 
 
