@@ -2,7 +2,6 @@
 
 let imgs = document.querySelectorAll('.carouselImg');
 let dots = document.querySelectorAll('.dot');
-// let captions = document.querySelectorAll('.carouselCaption')
 let imgPosition = 0;
 
 document.querySelector('.next').addEventListener('click', nextImg);
@@ -23,12 +22,6 @@ function updatePosition() {
     }
     dots[imgPosition].classList.add('active');
 
-    // for (let caption of captions) {
-    //     caption.classList.remove('visible');
-    //     caption.classList.add('hidden');
-    // }
-    // captions[imgPosition].classList.remove('hidden');
-    // captions[imgPosition].classList.add('visible')
 }
 
 // previous image 

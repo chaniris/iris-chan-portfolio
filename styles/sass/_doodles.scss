@@ -1,62 +1,56 @@
 /********** doodles **********/ 
 
 .doodles {
-    // main  
     .hidden {
         display: none;
     }
     .visible {
         display: block; 
     }
-    // carousel container 
-    .carouselContainer {
-        border: 2px solid #dadada;
-        position: relative;
-        margin: 0 auto; 
-        width: 400px;
-    }
-    // buttons 
-    .prev {
-        left: -100px; 
-    } 
-    .next {
-        right: -100px;
-    }
-    .arrow {
-        position: absolute;
-        display: inline;
-        top: 50%; 
-        // background-color: rgba($color-primary, 0.8);
-    }
-    // image numbers 
-    .imgNumbers {
-        position: absolute;
-        left: 0;
-        right: 0; 
-        bottom: 25px;
-        .dot {
-            background-color: rgba(204,204,204, 0.3);
-            display: inline-block;
-            width: 10px;
-            height: 10px;
-            margin: 0 2px;
-            border-radius: 50%;
-            cursor: pointer;
-        } 
-        .dot:hover, 
-        .active {
-            background-color: rgb(204,204,204);
-            width: 12px;
-            height: 12px;
-        }
-    }
-    // image captions
-    .carouselCaption {
-        background-color: rgba(204,204,204,.8);
-        width: 400px;
-        margin: 10px auto; 
-        padding: 0.5rem;
-        border-radius: 2px;
-        border: 2px solid #dadada;
-    }
+}
+
+.carouselContainer {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    position: relative;
+    margin: 0 auto; 
+    width: 400px;
+}
+
+.prev {
+    left: -110px; 
 } 
+
+.next {
+    right: -110px;
+}
+
+.arrow {
+    position: absolute;
+    display: inline;
+    top: 50%; 
+    // background-color: rgba($color-primary, 0.8);
+}
+
+.imgNumbers {
+    position: absolute;
+    left: 0;
+    right: 0; 
+    bottom: 25px;
+}
+
+.dot {
+    background-color: rgba(204,204,204, 0.3);
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 2px;
+    border-radius: 50%;
+    cursor: pointer;
+} 
+
+.dot:hover, 
+.active {
+    background-color: rgb(204,204,204);
+    width: 12px;
+    height: 12px;
+}
