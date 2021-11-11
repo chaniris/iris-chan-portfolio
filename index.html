@@ -22,6 +22,9 @@
 
     <!-- link to fontawesome -->
     <script src="https://kit.fontawesome.com/1eff98ce6d.js" crossorigin="anonymous"></script>
+
+    <!-- link to aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <button onclick="topFunction()" id="homeButton" aria-label='Back to top'>🔝</button>
@@ -46,7 +49,7 @@
             </div>
         </div> 
 
-        <div class="homeContainer">
+        <div class="homeContainer" data-aos="fade-down">
             <div class="headerImgContainer">
                 <div class="whitespace">
                     <div class='alien1'>
@@ -100,9 +103,9 @@
     </header>
 
     <main>
-        <section id='about' class="about">
+        <section class="about" data-aos="fade-right">
             <div class="wrapper">
-                <h2>About Me</h2>
+                <h2 id='about'>About Me</h2>
                 <div class="aboutContainer">
                     <div class='f1Img'>
                         <img src="images/avatar/iris-f1.gif" alt="Profile picture avatar" />
@@ -119,9 +122,9 @@
             </div>
         </section>
 
-        <section id='skills' class="skills">
+        <section class="skills" data-aos="fade-left">
             <div class="wrapper">
-                <h2>Skills</h2>
+                <h2 id='skills'>Skills</h2>
                 <div class='skillsContainer'>
                     <ul>
                         <li>
@@ -196,9 +199,9 @@
             </div>
         </section>
 
-        <section id='projects' class="projects">
+        <section class="projects" data-aos="fade-right">
             <div class="wrapper">
-                <h2>Projects</h2>
+                <h2 id='projects'>Projects</h2>
                 <div class="projectContainer">
 
                     <div class="portfolioItem">
@@ -259,9 +262,9 @@
             </div>
         </section>
 
-        <section id='doodles' class="doodles">
+        <section class="doodles" data-aos="fade-left">
             <div class="wrapper">
-                <h2>Doodles</h2>
+                <h2 id='doodles'>Doodles</h2>
                 <div class="carouselContainer">
                     <div class="carouselImgs">
                         <li>
@@ -321,9 +324,9 @@
             </div>
         </section>
 
-        <section id='contact' class="contact">
+        <section class="contact" data-aos="fade-right">
             <div class="wrapper">
-                <h2>Contact Me</h2>
+                <h2 id='contact'>Contact Me</h2>
                 <div class="contactContainer">
                     <div class="headShot">
                         <img src="./images/avatar/IMG_6878-cropped.jpg" alt="Headshot of Iris">
@@ -355,5 +358,13 @@
 
     <!-- link to js -->
     <script src="script.js"></script>
+
+    <!-- initialize aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 2000
+        });
+    </script>
 </body>
 </html>
