@@ -11,7 +11,6 @@ footer {
 /********** return to top button **********/ 
 
 #homeButton {
-    display: none;
     position: fixed;
     bottom: 25px;
     right: 25px; 
@@ -21,6 +20,7 @@ footer {
 }
 
 #homeButton:hover {
-    opacity: 80%; 
+    opacity: 85%; 
     transition: all 0.2s;
+    bottom: 30px; 
 }

@@ -745,7 +745,6 @@ footer {
 
 /********** return to top button **********/
 #homeButton {
-  display: none;
   position: fixed;
   bottom: 25px;
   right: 25px;
@@ -755,9 +754,10 @@ footer {
 }
 
 #homeButton:hover {
-  opacity: 80%;
+  opacity: 85%;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  bottom: 30px;
 }
 
 /********** media queries **********/
@@ -830,6 +830,10 @@ footer {
     bottom: 20px;
     right: 20px;
     font-size: 1.8rem;
+  }
+
+  #homeButton:hover {
+    bottom: 25px;
   }
 }
 /* landscape phone to portrait tablet */
@@ -933,6 +937,10 @@ footer {
     bottom: 10px;
     right: 10px;
     font-size: 1.8rem;
+  }
+
+  #homeButton:hover {
+    bottom: 15px;
   }
 }
 /* landscape phones and down */
