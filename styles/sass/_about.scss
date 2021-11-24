@@ -76,16 +76,20 @@ a.button {
 } 
 
 .skillsContainer ul li {
-    width: 80px; 
-    margin: 10px 50px; 
+    width: 110px; 
+    margin: 10px 40px; 
+    border: 2px solid red; 
 } 
 
-.skillsContainer img {
+/* individual containers holding skills icons */ 
+.skillIconContainer {
+    width: 80px; 
+    margin: 0 auto; 
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
-} 
+}
 
-.skillsContainer img:hover {
+.skillIconContainer:hover {
     -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
     filter: grayscale(0%);
     transition: all 0.2s;
