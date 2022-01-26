@@ -589,20 +589,19 @@ a.button {
   filter: grayscale(100%);
 }
 
-.skillIconContainer:hover {
+/* black and white icons with no color */
+.skillsIcons {
+  opacity: 50%;
+}
+
+.skillsContainer li:hover .skillIconContainer {
   -webkit-filter: grayscale(0%);
   /* Safari 6.0 - 9.0 */
   filter: grayscale(0%);
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-
-/* black and white icons with no color */
-.skillsIcons {
-  opacity: 50%;
-}
-
-.skillsIcons:hover {
+.skillsContainer li:hover .skillsIcons {
   opacity: 100%;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
