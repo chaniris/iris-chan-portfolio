@@ -55,6 +55,15 @@
                 border-right: 20px solid transparent;
                 border-bottom: 20px solid rgba($color-light, 0.9); 
             }
+            // show hamburger icon 
+            #hamNav label { 
+                display: inline-block; 
+                color: $color-dark;
+            }
+            #hamNav label:hover,
+            #hamNav label:focus-within { 
+                color: $color-light;
+            }
         }
 } 
 

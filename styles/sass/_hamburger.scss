@@ -6,16 +6,16 @@
 
 @media (max-width: 768px) {
     #hamItems a {
-    display: block;
-    width: 100%;
+        display: block;
+        width: 100%;
     }
     // show hamburger icon 
     #hamNav label { 
-    display: inline-block; 
-    color: white;
-    background: $color-primary;
-    padding: 10px;
-    cursor: pointer;
+        display: inline-block; 
+        color: $color-light;
+        background: $color-primary;
+        padding: 10px;
+        cursor: pointer;
     }
     #hamNav label:hover,
     #hamNav label:focus-within { 

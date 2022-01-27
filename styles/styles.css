@@ -461,7 +461,7 @@ button:focus,
 
   #hamNav label {
     display: inline-block;
-    color: white;
+    color: #F9F9FF;
     background: #FFD15C;
     padding: 10px;
     cursor: pointer;
@@ -974,6 +974,10 @@ footer {
     margin: 10px 20px;
   }
 
+  .carouselContainer {
+    width: 335px;
+  }
+
   .headShot {
     width: 280px;
     height: 280px;
@@ -1038,5 +1042,13 @@ footer {
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     border-bottom: 20px solid rgba(249, 249, 255, 0.9);
+  }
+  .darkMode #hamNav label {
+    display: inline-block;
+    color: #353353;
+  }
+  .darkMode #hamNav label:hover,
+.darkMode #hamNav label:focus-within {
+    color: #F9F9FF;
   }
 }
