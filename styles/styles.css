@@ -843,6 +843,21 @@ footer {
 }
 /* landscape phone to portrait tablet */
 @media (max-width: 768px) {
+  header {
+    position: relative;
+  }
+
+  .headerContainer {
+    position: absolute;
+    z-index: 10;
+    top: 25px;
+    left: 25px;
+  }
+
+  .homeContainer {
+    height: 100vh;
+  }
+
   #themeToggle {
     margin-top: 15px;
   }
