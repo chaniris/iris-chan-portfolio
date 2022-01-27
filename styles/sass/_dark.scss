@@ -40,8 +40,14 @@
             color: $color-dark; 
         } 
         .skillsIcons {
-            opacity: 40%;
+            filter: invert(80%); 
         }
+        .skillsContainer li:hover {
+            .skillsIcons {
+                filter: invert(0%); 
+                transition: all 0.2s;
+            }
+        } 
 
         @media (max-width: 768px) {
             .aboutTextContainer::before {
