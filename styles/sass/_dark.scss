@@ -1,0 +1,45 @@
+.darkMode {
+        background-color: $color-dark; 
+        color: $color-light;  
+
+        .headerContainer a,
+        .headerContainer a:visited,
+        .socialLinksContainer a,
+        .socialLinksContainer a:visited,
+        button:hover,
+        button:focus,  
+        .button:hover, 
+        .button:focus {
+            color: $color-light; 
+        }
+        .headerContainer a:focus,
+        .headerContainer a:hover {
+            color: $color-primary; 
+            border-bottom: 2px solid $color-primary; 
+        } 
+        .socialLinksContainer a:focus,
+        .socialLinksContainer a:hover {
+            color: $color-primary; 
+        }  
+        .aboutTextContainer,
+        .carouselContainer,
+        input, 
+        textarea {
+            background-color: rgba($color-light, 0.9); 
+            -webkit-box-shadow: 0px 5px 20px 0px rgba($color-light, 0.1); 
+            -moz-box-shadow: 0px 5px 20px 0px rgba($color-light, 0.1); 
+            box-shadow: 0px 5px 20px 0px rgba($color-light, 0.1); 
+            -webkit-appearance: none;
+        }
+        .aboutTextContainer::before {
+            border-right: 20px solid rgba($color-light, 0.9); 
+        }
+        .intro,
+        button,
+        a.button {
+            color: $color-dark; 
+        } 
+        .skillsIcons {
+            opacity: 40%;
+        }
+} 

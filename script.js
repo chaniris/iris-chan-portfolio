@@ -1,3 +1,11 @@
+/********** light/dark mode **********/
+
+function toggleButton() {
+    let element = document.body;
+    element.classList.toggle('darkMode');
+}
+
+
 /********** image carousel **********/
 
 let imgs = document.querySelectorAll('.carouselImg');

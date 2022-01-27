@@ -248,6 +248,7 @@ button {
 }
 
 body {
+  color: #353353;
   text-align: center;
   font-size: 0.8rem;
   background-color: #F9F9FF;
@@ -267,7 +268,6 @@ section {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #353353;
   font-weight: 700;
 }
 
@@ -439,6 +439,8 @@ h1 {
   text-decoration: none;
 }
 
+button:hover,
+button:focus,
 .button:hover,
 .button:focus {
   color: #353353;
@@ -507,7 +509,7 @@ h2 {
 .aboutTextContainer {
   text-align: left;
   border-radius: 30px;
-  background: white;
+  background-color: white;
   padding: 0 40px;
   width: 50%;
   position: relative;
@@ -980,4 +982,47 @@ footer {
   #homeButton {
     visibility: hidden;
   }
+}
+.darkMode {
+  background-color: #353353;
+  color: #F9F9FF;
+}
+.darkMode .headerContainer a,
+.darkMode .headerContainer a:visited,
+.darkMode .socialLinksContainer a,
+.darkMode .socialLinksContainer a:visited,
+.darkMode button:hover,
+.darkMode button:focus,
+.darkMode .button:hover,
+.darkMode .button:focus {
+  color: #F9F9FF;
+}
+.darkMode .headerContainer a:focus,
+.darkMode .headerContainer a:hover {
+  color: #FFD15C;
+  border-bottom: 2px solid #FFD15C;
+}
+.darkMode .socialLinksContainer a:focus,
+.darkMode .socialLinksContainer a:hover {
+  color: #FFD15C;
+}
+.darkMode .aboutTextContainer,
+.darkMode .carouselContainer,
+.darkMode input,
+.darkMode textarea {
+  background-color: rgba(249, 249, 255, 0.9);
+  -webkit-box-shadow: 0px 5px 20px 0px rgba(249, 249, 255, 0.1);
+  box-shadow: 0px 5px 20px 0px rgba(249, 249, 255, 0.1);
+  -webkit-appearance: none;
+}
+.darkMode .aboutTextContainer::before {
+  border-right: 20px solid rgba(249, 249, 255, 0.9);
+}
+.darkMode .intro,
+.darkMode button,
+.darkMode a.button {
+  color: #353353;
+}
+.darkMode .skillsIcons {
+  opacity: 40%;
 }
