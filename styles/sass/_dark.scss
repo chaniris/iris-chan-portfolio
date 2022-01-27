@@ -42,4 +42,13 @@
         .skillsIcons {
             opacity: 40%;
         }
+
+        @media (max-width: 768px) {
+            .aboutTextContainer::before {
+                border-left: 20px solid transparent;
+                border-right: 20px solid transparent;
+                border-bottom: 20px solid rgba($color-light, 0.9); 
+            }
+        }
 } 
+

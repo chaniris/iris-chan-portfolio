@@ -1026,3 +1026,10 @@ footer {
 .darkMode .skillsIcons {
   opacity: 40%;
 }
+@media (max-width: 768px) {
+  .darkMode .aboutTextContainer::before {
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid rgba(249, 249, 255, 0.9);
+  }
+}
