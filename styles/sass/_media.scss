@@ -56,6 +56,13 @@
 
 /* landscape phone to portrait tablet */
 @media (max-width: 768px) {
+    #themeToggle {
+        margin-top: 15px; 
+    } 
+    .headerContainer a:focus,
+    .headerContainer a:hover {
+        border-bottom: unset !important; 
+    }  
     .whitespace {
         width: 150px;
     } 

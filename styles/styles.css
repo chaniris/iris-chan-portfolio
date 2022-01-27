@@ -267,7 +267,8 @@ section {
   position: relative;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6,
+#menuToggle {
   font-weight: 700;
 }
 
@@ -842,6 +843,15 @@ footer {
 }
 /* landscape phone to portrait tablet */
 @media (max-width: 768px) {
+  #themeToggle {
+    margin-top: 15px;
+  }
+
+  .headerContainer a:focus,
+.headerContainer a:hover {
+    border-bottom: unset !important;
+  }
+
   .whitespace {
     width: 150px;
   }
@@ -1027,15 +1037,14 @@ footer {
 .darkMode a.button {
   color: #353353;
 }
-.darkMode .skillsIcons {
+.darkMode .skillsIcons,
+.darkMode #homeButton {
   -webkit-filter: invert(80%);
           filter: invert(80%);
 }
 .darkMode .skillsContainer li:hover .skillsIcons {
-  -webkit-filter: invert(0%);
-          filter: invert(0%);
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-filter: invert(80%);
+          filter: invert(80%);
 }
 @media (max-width: 768px) {
   .darkMode .aboutTextContainer::before {
