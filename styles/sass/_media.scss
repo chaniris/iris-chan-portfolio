@@ -62,9 +62,11 @@
     .headerContainer {
         position: absolute; 
         z-index: 10;
-        top: 25px; 
-        left: 25px; 
+        margin: 25px; 
+        width: 100px; 
     }
+
+
     .homeContainer {
         height: 100vh; 
     } 

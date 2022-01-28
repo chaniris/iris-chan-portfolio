@@ -54,16 +54,13 @@
                 border-left: 20px solid transparent;
                 border-right: 20px solid transparent;
                 border-bottom: 20px solid rgba($color-light, 0.9); 
-            }
-            // show hamburger icon 
-            #hamNav label { 
-                display: inline-block; 
-                color: $color-dark;
-            }
-            #hamNav label:hover,
-            #hamNav label:focus-within { 
-                color: $color-light;
+            }    
+            #hamNav label {
+                background-color: $color-medium; 
+                -webkit-box-shadow: 0px 5px 20px 0px rgba($color-light, 0.1); 
+                -moz-box-shadow: 0px 5px 20px 0px rgba($color-light, 0.1); 
+                box-shadow: 0px 5px 20px 0px rgba($color-light, 0.1); 
+                -webkit-appearance: none;
             }
         }
 } 
-

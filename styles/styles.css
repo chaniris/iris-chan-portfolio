@@ -462,15 +462,18 @@ button:focus,
 
   #hamNav label {
     display: inline-block;
-    color: #F9F9FF;
-    background: #FFD15C;
+    color: #353353;
+    background-color: white;
     padding: 10px;
     cursor: pointer;
+    -webkit-box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+    box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+    -webkit-appearance: none;
   }
 
   #hamNav label:hover,
 #hamNav label:focus-within {
-    color: #353353;
+    color: #FFD15C;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
   }
@@ -850,8 +853,8 @@ footer {
   .headerContainer {
     position: absolute;
     z-index: 10;
-    top: 25px;
-    left: 25px;
+    margin: 25px;
+    width: 100px;
   }
 
   .homeContainer {
@@ -1068,11 +1071,9 @@ footer {
     border-bottom: 20px solid rgba(249, 249, 255, 0.9);
   }
   .darkMode #hamNav label {
-    display: inline-block;
-    color: #353353;
-  }
-  .darkMode #hamNav label:hover,
-.darkMode #hamNav label:focus-within {
-    color: #F9F9FF;
+    background-color: #999;
+    -webkit-box-shadow: 0px 5px 20px 0px rgba(249, 249, 255, 0.1);
+    box-shadow: 0px 5px 20px 0px rgba(249, 249, 255, 0.1);
+    -webkit-appearance: none;
   }
 }
