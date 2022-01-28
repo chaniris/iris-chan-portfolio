@@ -1071,7 +1071,7 @@ footer {
     border-bottom: 20px solid rgba(249, 249, 255, 0.9);
   }
   .darkMode #hamNav label {
-    background-color: #999;
+    background-color: rgba(249, 249, 255, 0.9);
     -webkit-box-shadow: 0px 5px 20px 0px rgba(249, 249, 255, 0.1);
     box-shadow: 0px 5px 20px 0px rgba(249, 249, 255, 0.1);
     -webkit-appearance: none;
